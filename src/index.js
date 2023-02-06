@@ -1,5 +1,6 @@
 import loadHomepage from "./homepage";
 import loadMenu from "./menu";
+import "./style.css";
 
 const navigation = document.getElementById("nav");
 
@@ -21,14 +22,24 @@ function clearPage() {
   }
 }
 
+function applyStyle() {
+  const allElements = document.querySelectorAll("*");
+  allElements.forEach((element) => {
+    element.classList.add("applied");
+  });
+}
+
 menuButton.addEventListener("click", () => {
   clearPage();
   loadMenu();
+  applyStyle();
 });
 
 homeButton.addEventListener("click", () => {
   clearPage();
   loadHomepage();
+  applyStyle();
 });
 
 loadHomepage();
+applyStyle();

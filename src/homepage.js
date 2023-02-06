@@ -11,6 +11,6 @@ export default function loadHomepage() {
 
   const content = document.createElement("p");
   content.textContent =
-    "The exercise actually calls for a restaurant website but I'm itching to get to the next module so I'll just blitz through this one :)";
+    "The exercise actually calls for a restaurant website but I'm itching to get to the next module so I'll just blitz through this one :) Click the Menu button above ↑";
   contentBlock.append(content);
 }
