@@ -11,7 +11,7 @@ export default function loadMenu() {
 
   const content = document.createElement("p");
   content.textContent =
-    "The webpack part is the most important thing concept here. But if you still want to see a list of dishes, I won't disappoint you. So here's a few of my favorites:";
+    "The webpack part is the most important concept here. But if you still want to see a list of dishes, I won't disappoint you. So here's a few of my favorites:";
   contentBlock.append(content);
 
   const faveFood1 = document.createElement("li");

@@ -6,3 +6,11 @@
 .applied {
   font-family: "Alegreya";
 }
+
+.button {
+  cursor: pointer;
+}
+
+.active-button {
+  background-color: rgb(225, 229, 212);
+}

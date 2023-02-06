@@ -27,19 +27,29 @@ function applyStyle() {
   allElements.forEach((element) => {
     element.classList.add("applied");
   });
+
+  const buttons = document.querySelectorAll("button");
+  buttons.forEach((button) => {
+    button.classList.add("button");
+  });
 }
 
 menuButton.addEventListener("click", () => {
   clearPage();
   loadMenu();
   applyStyle();
+  menuButton.classList.add("active-button");
+  homeButton.classList.remove("active-button");
 });
 
 homeButton.addEventListener("click", () => {
   clearPage();
   loadHomepage();
   applyStyle();
+  homeButton.classList.add("active-button");
+  menuButton.classList.remove("active-button");
 });
 
 loadHomepage();
 applyStyle();
+homeButton.classList.add("active-button");
