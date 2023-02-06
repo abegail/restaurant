@@ -11,10 +11,18 @@ export default function loadMenu() {
 
   const content = document.createElement("p");
   content.textContent =
-    "The webpack part is the most important thing concept here. But if you still want to see a list of dishes, here's a few of my favorites:";
+    "The webpack part is the most important thing concept here. But if you still want to see a list of dishes, I won't disappoint you. So here's a few of my favorites:";
   contentBlock.append(content);
 
-  const faveFoods = document.createElement("li");
-  faveFoods.textContent = "Bakes scallops";
-  contentBlock.append(faveFoods);
+  const faveFood1 = document.createElement("li");
+  faveFood1.textContent = "Baked scallops";
+  contentBlock.append(faveFood1);
+
+  const faveFood2 = document.createElement("li");
+  faveFood2.textContent = "Pizza";
+  contentBlock.append(faveFood2);
+
+  const faveFood3 = document.createElement("li");
+  faveFood3.textContent = "Grilled salmon";
+  contentBlock.append(faveFood3);
 }
